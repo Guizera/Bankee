@@ -13,6 +13,12 @@
 		3F2881D725E8611500DB2183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2881D525E8611500DB2183 /* Main.storyboard */; };
 		3F2881D925E8611900DB2183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2881D825E8611900DB2183 /* Assets.xcassets */; };
 		3F2881DC25E8611900DB2183 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2881DA25E8611900DB2183 /* LaunchScreen.storyboard */; };
+		3F2881EE25E931D900DB2183 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2881ED25E931D900DB2183 /* LoginViewController.swift */; };
+		3F2881F325E9343200DB2183 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2881F225E9343200DB2183 /* UIView.swift */; };
+		3F2881F825E98E9500DB2183 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2881F725E98E9500DB2183 /* UITextField.swift */; };
+		3F2881FC25ED768800DB2183 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2881FB25ED768800DB2183 /* UILabel.swift */; };
+		3F28820025ED7A4900DB2183 /* BankeeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2881FF25ED7A4900DB2183 /* BankeeButton.swift */; };
+		3F28820325ED7EB600DB2183 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28820225ED7EB500DB2183 /* UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		3F2881D825E8611900DB2183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F2881DB25E8611900DB2183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F2881DD25E8611900DB2183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F2881ED25E931D900DB2183 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3F2881F225E9343200DB2183 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		3F2881F725E98E9500DB2183 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		3F2881FB25ED768800DB2183 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		3F2881FF25ED7A4900DB2183 /* BankeeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankeeButton.swift; sourceTree = "<group>"; };
+		3F28820225ED7EB500DB2183 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 		3F2881CE25E8611500DB2183 /* Bankee */ = {
 			isa = PBXGroup;
 			children = (
+				3F2881F125E9341A00DB2183 /* View */,
+				3F2881E725E9319800DB2183 /* Controller */,
 				3F2881CF25E8611500DB2183 /* AppDelegate.swift */,
 				3F2881D125E8611500DB2183 /* SceneDelegate.swift */,
 				3F2881D325E8611500DB2183 /* ViewController.swift */,
@@ -65,6 +79,42 @@
 				3F2881DD25E8611900DB2183 /* Info.plist */,
 			);
 			path = Bankee;
+			sourceTree = "<group>";
+		};
+		3F2881E725E9319800DB2183 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F2881ED25E931D900DB2183 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F2881F025E9340A00DB2183 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F2881F725E98E9500DB2183 /* UITextField.swift */,
+				3F2881F225E9343200DB2183 /* UIView.swift */,
+				3F2881FB25ED768800DB2183 /* UILabel.swift */,
+				3F28820225ED7EB500DB2183 /* UIButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3F2881F125E9341A00DB2183 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F2881F625E98E3600DB2183 /* Components */,
+				3F2881F025E9340A00DB2183 /* Extensions */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F2881F625E98E3600DB2183 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3F2881FF25ED7A4900DB2183 /* BankeeButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +187,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2881F325E9343200DB2183 /* UIView.swift in Sources */,
+				3F2881F825E98E9500DB2183 /* UITextField.swift in Sources */,
+				3F2881FC25ED768800DB2183 /* UILabel.swift in Sources */,
+				3F2881EE25E931D900DB2183 /* LoginViewController.swift in Sources */,
 				3F2881D425E8611500DB2183 /* ViewController.swift in Sources */,
 				3F2881D025E8611500DB2183 /* AppDelegate.swift in Sources */,
 				3F2881D225E8611500DB2183 /* SceneDelegate.swift in Sources */,
+				3F28820025ED7A4900DB2183 /* BankeeButton.swift in Sources */,
+				3F28820325ED7EB600DB2183 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
